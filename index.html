@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Projeto - Programa Agrinho</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f9f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #2e7d32;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        header p {
+            margin: 5px 0 0;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        .card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+        h2 {
+            color: #2e7d32;
+            border-bottom: 2px solid #a5d6a7;
+            padding-bottom: 0.5rem;
+        }
+        .form-group {
+            margin-bottom: 1.2rem;
+        }
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+        input[type="text"], input[type="email"], textarea, select {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #2e7d32;
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            font-size: 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            font-weight: bold;
+        }
+        button:hover {
+            background-color: #1b5e20;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #666;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Rumo ao Agrinho!</h1>
+        <p>Inovação, Sustentabilidade e Educação no Campo</p>
+    </header>
+
+    <div class="container">
+        
+        <div class="card">
+            <h2>Sobre o Meu Projeto</h2>
+            <p>Use este espaço para descrever a ideia principal do seu trabalho do Agrinho. Se for uma redação, um desenho ou um projeto de robótica/inovação, explique o impacto dele para a sua comunidade ou escola.</p>
+        </div>
+
+        <div class="card">
+            <h2>Ficha de Participação</h2>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="escola">Sua Escola:</label>
+                    <input type="text" id="escola" name="escola" placeholder="Nome da sua instituição" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="categoria">Categoria do Agrinho:</label>
+                    <select id="categoria" name="categoria">
+                        <option value="desenho">Desenho</option>
+                        <option value="redacao">Redação</option>
+                        <option value="experiencia-pedagogica">Experiência Pedagógica (Professores)</option>
+                        <option value="colegio-agricola">Colégio Agrícola</option>
+                        <option value="robotica">Robótica / Inovação</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="resumo">Resumo da sua Ideia:</label>
+                    <textarea id="resumo" name="resumo" rows="5" placeholder="Conte um pouco sobre o que você vai apresentar..." required></textarea>
+                </div>
+
+                <button type="submit">Enviar Inscrição do Projeto</button>
+            </form>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 - Página Criada para o Concurso Agrinho</p>
+    </footer>
+
+</body>
+</html>
